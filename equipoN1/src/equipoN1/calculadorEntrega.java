@@ -61,5 +61,27 @@ public class calculadorEntrega {
 	        return numeros;
 	    }
 	  
-	//Fin erica  
+	//Fin erica
+	 // Inicio elessar
+	    public static double realizarOperacion(int opcion, double num1, double num2) {
+	        switch (opcion) {
+	            case 1:
+	                return sumar(num1, num2);
+	            case 2:
+	                return restar(num1, num2);
+	            case 3:
+	                return multiplicar(num1, num2);
+	            case 4:
+	                return dividir(num1, num2);
+	            default:
+	                System.out.println("Opción no válida");
+	                return 0;
+	        }
+	    }
+
+	    // Método para sumar
+	    public static double sumar(double a, double b) {
+	        return a + b;
+	    }//Fin elessar
 }
+
