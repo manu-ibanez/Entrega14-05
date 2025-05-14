@@ -31,5 +31,35 @@ public class calculadorEntrega {
 	        scanner.close();
 	   
 	  }
+	  
 	  //fin codigo manu
-	  }
+
+
+	  // Principioo Erica
+	    public static void mostrarMenu() {
+	        System.out.println("\nOperaciones disponibles:");
+	        System.out.println("1. Sumar");
+	        System.out.println("2. Restar");
+	        System.out.println("3. Multiplicar");
+	        System.out.println("4. Dividir");
+	        System.out.println("0. Salir");
+	    }
+
+	    // Método para obtener la opción del usuario
+	    public static int obtenerOpcion(Scanner scanner) {
+	        System.out.print("Seleccione una operación (0-4): ");
+	        return scanner.nextInt();
+	    }
+
+	    // Método para obtener los números de entrada
+	    public static double[] obtenerNumeros(Scanner scanner) {
+	        double[] numeros = new double[2];
+	        System.out.print("Ingrese el primer número: ");
+	        numeros[0] = scanner.nextDouble();
+	        System.out.print("Ingrese el segundo número: ");
+	        numeros[1] = scanner.nextDouble();
+	        return numeros;
+	    }
+	  
+	//Fin erica  
+}
