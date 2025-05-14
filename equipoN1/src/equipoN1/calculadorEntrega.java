@@ -83,5 +83,25 @@ public class calculadorEntrega {
 	    public static double sumar(double a, double b) {
 	        return a + b;
 	    }//Fin elessar
-}
+	//Inicio Adrian
 
+	    // Método para restar
+	    public static double restar(double a, double b) {
+	        return a - b;
+	    }
+
+	    // Método para multiplicar
+	    public static double multiplicar(double a, double b) {
+	        return a * b;
+	    }
+
+	    // Método para dividir
+	    public static double dividir(double a, double b) {
+	        if (b == 0) {
+	            System.out.println("Error: No se puede dividir por cero");
+	            return Double.NaN; // Retorna "Not a Number" para divisiones por cero
+	        }
+	        return a / b;
+	    }
+	   //fin Adrian
+	}
